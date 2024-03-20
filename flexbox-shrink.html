@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Shrink</title>
+    <style>
+        .container {
+            display: flex;
+        }
+        .content {
+            background-color: aqua;
+            border: 1px solid blue;
+            padding: 5px;
+            margin: 5px;
+        }
+        .content1 {
+            flex-shrink: 1;
+        }
+        .content2 {
+            flex-shrink: 2;
+        }
+        .content3 {
+            flex-shrink: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content content1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia ex magnam molestias ducimus temporibus, vel corrupti nesciunt blanditiis neque libero debitis maxime officiis repudiandae voluptates? Earum quaerat iure illum esse?</div>
+        <div class="content content2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia ex magnam molestias ducimus temporibus, vel corrupti nesciunt blanditiis neque libero debitis maxime officiis repudiandae voluptates? Earum quaerat iure illum esse?</div>
+        <div class="content content3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia ex magnam molestias ducimus temporibus, vel corrupti nesciunt blanditiis neque libero debitis maxime officiis repudiandae voluptates? Earum quaerat iure illum esse?</div>
+    </div>
+</body>
+</html>

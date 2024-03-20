@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Line</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: [cline1] 100px [cline2] auto [cline3] 100px [cline4];
+            grid-template-rows: [rline1] 50px [rline2] auto [rline3] 100px [rline4];
+        }
+        .content {
+            background-color: aqua;
+            border: 2px solid blue;
+            padding: 10px;
+            margin: 10px;
+        }
+        .header {
+            background-color: aqua;
+            grid-column-start: cline1;
+            grid-column-end: cline4;
+            grid-row-start: rline1;
+            grid-row-end: rline2;
+        }
+        .footer {
+            background-color: aqua;
+            grid-column-start: cline1;
+            grid-column-end: cline4;
+            grid-row-start: rline3;
+            grid-row-end: rline4;
+        }
+        .content {
+            background-color: bisque;
+            grid-column-start: cline2;
+            grid-column-end: cline3;
+            grid-row-start: rline2;
+            grid-row-end: rline3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            Selamat Datang di web Programmer Zaman Now
+        </div>
+        <div class="content">
+            <h1>Programmer Zaman Now</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam alias adipisci fugiat dignissimos consectetur, tempora est numquam libero explicabo temporibus, natus voluptates. Necessitatibus nostrum dolores ab quaerat eos dicta inventore.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, totam architecto? Fugiat maiores amet odio vero sunt! Beatae unde aperiam assumenda hic, dignissimos tenetur sed quam ad enim eos temporibus.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, totam architecto? Fugiat maiores amet odio vero sunt! Beatae unde aperiam assumenda hic, dignissimos tenetur sed quam ad enim eos temporibus.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, totam architecto? Fugiat maiores amet odio vero sunt! Beatae unde aperiam assumenda hic, dignissimos tenetur sed quam ad enim eos temporibus.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, totam architecto? Fugiat maiores amet odio vero sunt! Beatae unde aperiam assumenda hic, dignissimos tenetur sed quam ad enim eos temporibus.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, totam architecto? Fugiat maiores amet odio vero sunt! Beatae unde aperiam assumenda hic, dignissimos tenetur sed quam ad enim eos temporibus.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, totam architecto? Fugiat maiores amet odio vero sunt! Beatae unde aperiam assumenda hic, dignissimos tenetur sed quam ad enim eos temporibus.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, totam architecto? Fugiat maiores amet odio vero sunt! Beatae unde aperiam assumenda hic, dignissimos tenetur sed quam ad enim eos temporibus.</p>
+        </div>
+        <div class="footer">
+            Develop with Love by Programmer Zaman Now
+        </div>
+    </div>
+</body>
+</html>
